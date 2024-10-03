@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignolo - App Pokemones</title>
+    <link rel="stylesheet" href="AplicacionPokemon.css">
+</head>
+<body>
+    <header>
+        <h1>Pokedex</h1>
+        <input type="text" id="search" placeholder="Buscar Pokémon por nombre o ID">
+        <select id="type-filter">
+            <option value="">Filtrar por tipo</option>
+        </select>
+    </header>
+
+    <main>
+        <div id="pokemon-list"></div>
+    </main>
+
+    <!-- Panel para mostrar los detalles del Pokémon -->
+<div id="pokemon-modal" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar">&times;</span>  
+        <h2 id="pokemon-name"></h2>
+        <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+        <p><strong>Altura:</strong> <span id="pokemon-height"></span></p>
+        <p><strong>Peso:</strong> <span id="pokemon-weight"></span></p>
+        <p><strong>Habilidades:</strong> <span id="pokemon-abilities"></span></p>
+    </div>
+</div>
+
+<div id="pagination-controls" style="text-align: center; margin: 20px;">
+    <button id="prev-page">Anterior</button>
+    <button id="next-page">Siguiente</button>
+</div>
+
+
+
+    <script src="AplicacionPokemon.js"></script>
+</body>
+</html>

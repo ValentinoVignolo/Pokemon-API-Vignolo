@@ -1,0 +1,132 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ed996c, #e46b20); /* Fondo degradado */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffcc00;
+}
+
+#search {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 2px solid #ff6347; /* Color de borde */
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Estilos para las tarjetas de Pokémon */
+.pokemon-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    display: inline-table;
+    transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05); /* Efecto de agrandar al pasar el mouse */
+}
+
+.pokemon-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.favorite-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+}
+
+.favorite-button.favorited {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none; /* Por defecto el modal está oculto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-contenido {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal img {
+    width: 200px;
+    height: 200px;
+}
+
+.cerrar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover, .cerrar:focus {
+    color: black;
+}
+
+#pagination-controls button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#pagination-controls button:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+#type-filter {
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #ff6347; /* Color de borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #fff; /* Fondo blanco */
+}
+
+/* Botón de filtro estilizado */
+#type-filter option {
+    background-color: #fff; /* Fondo blanco para opciones */
+}
